@@ -82,6 +82,7 @@ public function setChildGroups()
 */
 public function SetCurrentPatchCPs()
 {	
+
 	var i : int = 0;
 	
 	CurrentAngle = 90.0;

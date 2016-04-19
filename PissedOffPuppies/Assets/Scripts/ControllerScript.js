@@ -41,6 +41,7 @@ private var bInDuck : boolean = false;				//true if the character is sliding
 private var bDiveFlag : boolean = false;			//force character to dive during jump
 private var bExecuteLand : boolean = false;
 private var bInStrafe : boolean = false;
+private var isBossMode : boolean = false;
 
 private var fForwardAccleration : float = 0.0;
 private var tBlobShadowPlane : Transform;	//the shadow under the player
@@ -332,7 +333,15 @@ function SetTransform()
 	if (bControlsEnabled)
 		var iStrafeDirection : int = getLeftRightInput();	//get the current lane (-1, 0 or 1)
 	
-	fCurrentDistanceOnPath = hCheckPointsMain.SetNextMidPointandRotation(fCurrentDistanceOnPath, fCurrentForwardSpeed);//distance on current patch
+		if (!isBossMode) {
+            try {
+                fCurrentDistanceOnPath = hCheckPointsMain.SetNextMidPointandRotation(fCurrentDistanceOnPath, fCurrentForwardSpeed);//distance on current patch
+	
+            }catch(err){
+                
+            }
+		    
+		}
 	fCurrentDistance = fCurrentDistanceOnPath + hPatchesRandomizer.getCoveredDistance();//total distance since the begining of the run
 	fCurrentMileage = fCurrentDistance/12.0;//calculate milage to display score on HUD
 	
@@ -386,6 +395,11 @@ function SetTransform()
 	tPlayer.position.z = Desired_Horinzontal_Pos.z;//set player position in y-axis
 	
 }//end of Set Transform()
+
+public function setBossMode(bossMode : boolean)
+{
+    isBossMode = bossMode;
+}
 
 /*
 *	FUNCTION: Set the height of the player during jump
@@ -548,12 +562,17 @@ private function getLeftRightInput()	//change lane
 	}
 }
 
+
+
 /*
 *	FUNCTION: Set the movement speed
 *	CALLED BY: FixedUpdate()
 */
-private function setForwardSpeed()
-{
+private function setForwardSpeed() {
+    if (isBossMode) {
+        fCurrentForwardSpeed = 0.0;
+        return;
+    }
 	//if the player is not on Terrain_lyr
 	if(hPitsMainController.isFallingInPit() == true)
 	{		

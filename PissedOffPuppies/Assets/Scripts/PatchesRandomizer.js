@@ -10,7 +10,7 @@
 */
 
 var patchesPrefabs : GameObject[];//patches that will be generated
-
+var bossPatch : GameObject;
 private var goPreviousPatch : GameObject;//the patch the the player passed
 private var goCurrentPatch : GameObject;//the patch the player is currently on
 private var goNextPatch : GameObject;//the next patch located immediatly after current patch
@@ -26,6 +26,7 @@ private var hElementsGenerator : ElementsGenerator;
 private var hCheckPointsMain : CheckPointsMain;
 private var numPatches : int = 1;
 private var maxNumPatches : int = 1;
+
 
 //get the current path length
 public function getCoveredDistance():float { return fPreviousTotalDistance; } 
@@ -77,6 +78,18 @@ public function createNewPatch() {
         hElementsGenerator.generateElements();	//generate obstacles on created patch
 
         numPatches++;
+    } else {
+        goPreviousPatch = goCurrentPatch;
+        goCurrentPatch = goNextPatch;
+	
+        instantiateBossPatch();	
+        //hCheckPointsMain.setChildGroups();
+	
+        fPreviousTotalDistance += CheckPointsMain.fPathLength;
+	
+        //hElementsGenerator.generateElements();	//generate obstacles on created patch
+
+        //numPatches++;
     }
 
 	
@@ -85,6 +98,10 @@ public function createNewPatch() {
 private function instantiateNextPatch()
 {	
 	goNextPatch = Instantiate(patchesPrefabs[Random.Range(0,patchesPrefabs.length)],Vector3(fPatchDistance*(iCurrentPNum+1),0,0),Quaternion());
+}
+
+private function instantiateBossPatch() {
+    goNextPatch = Instantiate(bossPatch,Vector3(fPatchDistance*(iCurrentPNum+1),0,0),Quaternion());
 }
 
 /*

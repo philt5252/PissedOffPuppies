@@ -19,6 +19,7 @@ private var hSoundManager : SoundManager;
 private var hPowerupsMainController : PowerupsMainController;
 private var hEnemyController : EnemyController;
 private var hCameraController : CameraController;
+private var bIsBossMode : boolean = false;
 
 private var iPauseStatus : int = 0;
 private var iDeathStatus : int = 0;
@@ -206,6 +207,11 @@ function OnApplicationPause (pause : boolean) : void
 }
 
 public function isGamePaused() { return bGamePaused; }
+public function isBossMode() { return bIsBossMode; }
+public function setBossMode(bossMode : boolean)
+{
+    bIsBossMode = bossMode;
+}
 
 public function getLevelScore() { return iLevelScore; }
 public function incrementLevelScore(iValue:int) { iLevelScore += iValue; }
