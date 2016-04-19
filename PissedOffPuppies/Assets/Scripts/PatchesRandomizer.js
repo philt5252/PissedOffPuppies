@@ -24,6 +24,8 @@ private var iCurrentPNum : int = 1;//number of patches generated
 private var hInGameScript : InGameScript;
 private var hElementsGenerator : ElementsGenerator;
 private var hCheckPointsMain : CheckPointsMain;
+private var numPatches : int = 1;
+private var maxNumPatches : int = 1;
 
 //get the current path length
 public function getCoveredDistance():float { return fPreviousTotalDistance; } 
@@ -62,17 +64,22 @@ function Update()
 /*
 *	FUNCTION: Create a new Patch after the player reaches goNextPatch
 */
-public function createNewPatch()
-{
-	goPreviousPatch = goCurrentPatch;
-	goCurrentPatch = goNextPatch;
+public function createNewPatch() {
+    if (numPatches < maxNumPatches) {
+        goPreviousPatch = goCurrentPatch;
+        goCurrentPatch = goNextPatch;
 	
-	instantiateNextPatch();	
-	hCheckPointsMain.setChildGroups();
+        instantiateNextPatch();	
+        hCheckPointsMain.setChildGroups();
 	
-	fPreviousTotalDistance += CheckPointsMain.fPathLength;
+        fPreviousTotalDistance += CheckPointsMain.fPathLength;
 	
-	hElementsGenerator.generateElements();	//generate obstacles on created patch
+        hElementsGenerator.generateElements();	//generate obstacles on created patch
+
+        numPatches++;
+    }
+
+	
 }
 
 private function instantiateNextPatch()
