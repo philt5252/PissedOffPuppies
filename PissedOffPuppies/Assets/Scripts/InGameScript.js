@@ -210,6 +210,7 @@ public function isGamePaused() { return bGamePaused; }
 public function isBossMode() { return bIsBossMode; }
 public function setBossMode(bossMode : boolean)
 {
+    print("set bossmode");
     bIsBossMode = bossMode;
 }
 

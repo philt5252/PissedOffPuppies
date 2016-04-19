@@ -333,7 +333,7 @@ function SetTransform()
 	if (bControlsEnabled)
 		var iStrafeDirection : int = getLeftRightInput();	//get the current lane (-1, 0 or 1)
 	
-		if (!isBossMode) {
+		if (!hInGameScript.isBossMode()) {
             try {
                 fCurrentDistanceOnPath = hCheckPointsMain.SetNextMidPointandRotation(fCurrentDistanceOnPath, fCurrentForwardSpeed);//distance on current patch
 	
@@ -357,6 +357,7 @@ function SetTransform()
 		fContactPointY = hitInfo.point.y;
 	else//call death if player in not on Terrain_lyr
 	{
+	    print("not in terrain");
 		fContactPointY = -10000.0;
 		if(!bInAir)
 		{
@@ -569,7 +570,8 @@ private function getLeftRightInput()	//change lane
 *	CALLED BY: FixedUpdate()
 */
 private function setForwardSpeed() {
-    if (isBossMode) {
+    if (hInGameScript.isBossMode()) {
+        print("forwardSpeed 0");
         fCurrentForwardSpeed = 0.0;
         return;
     }
