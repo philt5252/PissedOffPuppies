@@ -163,8 +163,12 @@ public function SetNextMidPointandRotation(CurrentDistanceOnPath : float, Curren
 		CurrentDistanceOnPath = (CurrentDistanceOnPath+CurrentForwardSpeed) - PreviousPathLength;
 		CurrentDistanceOnPath = Mathf.Abs(CurrentDistanceOnPath);
 		hControllerScript.setCurrentDistanceOnPath(CurrentDistanceOnPath);
-		SetCurrentPatchCPs();
-		SetNextPatchCPs();
+
+		if (!hInGameScript.isBossMode()) {
+		    SetCurrentPatchCPs();
+		    SetNextPatchCPs();
+		}
+		
 		
 		CurrentPercent = (CurrentDistanceOnPath+CurrentForwardSpeed)/fPathLength;
 	}

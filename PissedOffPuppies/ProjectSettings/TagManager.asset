@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CPs_tag
   - PowerUps_tag
+  - BossPatch
   layers:
   - Default
   - TransparentFX

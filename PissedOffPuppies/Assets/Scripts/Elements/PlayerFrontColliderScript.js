@@ -21,7 +21,13 @@ function Start()
 }
 
 function OnCollisionEnter(collision : Collision)
-{		
+{
+    print("Collide");
+        if (collision.gameObject.tag == "BossPatch") {
+            print("BossPatch time!!");
+            return;
+        }
+
 	if (bFrontColliderFlag == true)
 	{
 		hPlayerSidesColliderScript.deactivateSidesCollider();	//dont detect stumbles on death

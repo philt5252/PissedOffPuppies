@@ -26,6 +26,7 @@ private var hElementsGenerator : ElementsGenerator;
 private var hCheckPointsMain : CheckPointsMain;
 private var numPatches : int = 1;
 private var maxNumPatches : int = 1;
+private var isBoss = false;
 
 
 //get the current path length
@@ -79,6 +80,10 @@ public function createNewPatch() {
 
         numPatches++;
     } else {
+        if (isBoss) {
+            print("?????");
+            hInGameScript.setBossMode(true);
+        }
         goPreviousPatch = goCurrentPatch;
         goCurrentPatch = goNextPatch;
 	
@@ -88,7 +93,7 @@ public function createNewPatch() {
         fPreviousTotalDistance += CheckPointsMain.fPathLength;
 	
         //hElementsGenerator.generateElements();	//generate obstacles on created patch
-
+        isBoss = true;
         //numPatches++;
     }
 
