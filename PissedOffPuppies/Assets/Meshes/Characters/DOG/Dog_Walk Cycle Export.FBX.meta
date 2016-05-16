@@ -1,0 +1,367 @@
+fileFormatVersion: 2
+guid: d6bf2e3265b374384bb6dbfff67c9421
+timeCreated: 1463109944
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone_Pup End Tail001
+    100002: Bone_Pup Head001
+    100004: Bone_Pup Inner Tounge001
+    100006: Bone_Pup Jaw001
+    100008: Bone_Pup L Bisep001
+    100010: Bone_Pup L Brow001
+    100012: Bone_Pup L Brow002
+    100014: Bone_Pup L Clavical001
+    100016: Bone_Pup L Forearm001
+    100018: Bone_Pup L Heel001
+    100020: Bone_Pup L Lower Ear001
+    100022: Bone_Pup L Palm001
+    100024: Bone_Pup L Pelvic001
+    100026: Bone_Pup L Shin001
+    100028: Bone_Pup L Thigh001
+    100030: Bone_Pup L Toe001
+    100032: Bone_Pup L Upper Ear001
+    100034: Bone_Pup Lower Neck001
+    100036: Bone_Pup Lower Tail001
+    100038: Bone_Pup Master Pelvic001
+    100040: Bone_Pup Mid Tail001
+    100042: Bone_Pup Mid Tounge001
+    100044: Bone_Pup Nose001
+    100046: Bone_Pup Outer Tounge001
+    100048: Bone_Pup R Bisep001
+    100050: Bone_Pup R Brow001
+    100052: Bone_Pup R Brow002
+    100054: Bone_Pup R Clavical001
+    100056: Bone_Pup R Forearm001
+    100058: Bone_Pup R Heel001
+    100060: Bone_Pup R Lower Ear001
+    100062: Bone_Pup R Palm001
+    100064: Bone_Pup R Pelvic001
+    100066: Bone_Pup R Shin001
+    100068: Bone_Pup R Thigh001
+    100070: Bone_Pup R Toe001
+    100072: Bone_Pup R Upper Ear001
+    100074: Bone_Pup Spine001
+    100076: Bone_Pup Spine002
+    100078: Bone_Pup Spine003
+    100080: Bone_Pup Upper Neck001
+    100082: Circle001
+    100084: Circle002
+    100086: Circle003
+    100088: Circle004
+    100090: Circle005
+    100092: Circle006
+    100094: Cntrl_Pup Jaw001
+    100096: Cntrl_Pup L Brow Roll001
+    100098: Cntrl_Pup L Brow001
+    100100: Cntrl_Pup L Ear Base001
+    100102: Cntrl_Pup L Ear MidSect001
+    100104: Cntrl_Pup L Front Foot001
+    100106: Cntrl_Pup L Rear Foot001
+    100108: Cntrl_Pup Main Toung001
+    100110: Cntrl_Pup Neck Base001
+    100112: Cntrl_Pup Neck001
+    100114: Cntrl_Pup Neck002
+    100116: Cntrl_Pup Nose001
+    100118: Cntrl_Pup Pelvis001
+    100120: Cntrl_Pup R Brow Roll001
+    100122: Cntrl_Pup R Brow001
+    100124: Cntrl_Pup R Ear Base001
+    100126: Cntrl_Pup R Ear MidSect001
+    100128: Cntrl_Pup R Front Foot001
+    100130: Cntrl_Pup R Rear Foot001
+    100132: Cntrl_Pup Root001
+    100134: Cntrl_Pup Spine Bend001
+    100136: Cntrl_Pup Spine Bend002
+    100138: Cntrl_Pup Spine Bend003
+    100140: Cntrl_Pup Tail Base001
+    100142: Cntrl_Pup Tail Base001 1
+    100144: Cntrl_Pup Tail End001
+    100146: Cntrl_Pup Tail Mid Sec001
+    100148: Cntrl_Pup Toung Bend001
+    100150: Cntrl_Pup World Ankor001
+    100152: //RootNode
+    100154: IK Chain001
+    100156: IK Chain002
+    100158: IK Chain003
+    100160: IK Chain004
+    100162: IK Chain005
+    100164: IK Chain006
+    100166: IK Chain007
+    100168: IK Chain008
+    100170: IK Chain009
+    100172: IK Chain010
+    100174: IK Chain011
+    100176: NUB_Bone Pup_Jaw001
+    100178: NUB_Bone Pup_Tounge001
+    100180: NUB_Bone_Pup Head001
+    100182: NUB_Bone_Pup L Brow001
+    100184: NUB_Bone_Pup L Ear001
+    100186: NUB_Bone_Pup L Leg001
+    100188: NUB_Bone_Pup Nose001
+    100190: NUB_Bone_Pup R Brow001
+    100192: NUB_Bone_Pup R Ear001
+    100194: NUB_Bone_Pup R Leg001
+    100196: NUB_Bone_Pup Tail001
+    100198: NUM_Bone_Pup L Arm001
+    100200: NUM_Bone_Pup R Arm001
+    100202: PissedDog_001
+    100204: Point001
+    100206: Point002
+    100208: Point003
+    100210: Point004
+    100212: Point005
+    100214: Point006
+    100216: Point007
+    100218: Point008
+    100220: Point009
+    100222: Point010
+    100224: Point011
+    100226: Point012
+    100228: Point013
+    100230: Point014
+    100232: Point015
+    100234: Point016
+    100236: Point017
+    100238: Point018
+    100240: Point019
+    100242: Point020
+    100244: Point021
+    100246: Point022
+    100248: Point023
+    100250: Point024
+    100252: Point025
+    100254: Point026
+    100256: Point027
+    100258: Point028
+    100260: Point029
+    100262: Point030
+    100264: Point031
+    100266: Point032
+    100268: Point033
+    100270: Point034
+    100272: Point035
+    100274: Point036
+    100276: Point037
+    100278: Point038
+    100280: Point039
+    100282: Point040
+    100284: Point041
+    100286: Point042
+    100288: Point043
+    100290: ROOT Bone_Pup000
+    400000: Bone_Pup End Tail001
+    400002: Bone_Pup Head001
+    400004: Bone_Pup Inner Tounge001
+    400006: Bone_Pup Jaw001
+    400008: Bone_Pup L Bisep001
+    400010: Bone_Pup L Brow001
+    400012: Bone_Pup L Brow002
+    400014: Bone_Pup L Clavical001
+    400016: Bone_Pup L Forearm001
+    400018: Bone_Pup L Heel001
+    400020: Bone_Pup L Lower Ear001
+    400022: Bone_Pup L Palm001
+    400024: Bone_Pup L Pelvic001
+    400026: Bone_Pup L Shin001
+    400028: Bone_Pup L Thigh001
+    400030: Bone_Pup L Toe001
+    400032: Bone_Pup L Upper Ear001
+    400034: Bone_Pup Lower Neck001
+    400036: Bone_Pup Lower Tail001
+    400038: Bone_Pup Master Pelvic001
+    400040: Bone_Pup Mid Tail001
+    400042: Bone_Pup Mid Tounge001
+    400044: Bone_Pup Nose001
+    400046: Bone_Pup Outer Tounge001
+    400048: Bone_Pup R Bisep001
+    400050: Bone_Pup R Brow001
+    400052: Bone_Pup R Brow002
+    400054: Bone_Pup R Clavical001
+    400056: Bone_Pup R Forearm001
+    400058: Bone_Pup R Heel001
+    400060: Bone_Pup R Lower Ear001
+    400062: Bone_Pup R Palm001
+    400064: Bone_Pup R Pelvic001
+    400066: Bone_Pup R Shin001
+    400068: Bone_Pup R Thigh001
+    400070: Bone_Pup R Toe001
+    400072: Bone_Pup R Upper Ear001
+    400074: Bone_Pup Spine001
+    400076: Bone_Pup Spine002
+    400078: Bone_Pup Spine003
+    400080: Bone_Pup Upper Neck001
+    400082: Circle001
+    400084: Circle002
+    400086: Circle003
+    400088: Circle004
+    400090: Circle005
+    400092: Circle006
+    400094: Cntrl_Pup Jaw001
+    400096: Cntrl_Pup L Brow Roll001
+    400098: Cntrl_Pup L Brow001
+    400100: Cntrl_Pup L Ear Base001
+    400102: Cntrl_Pup L Ear MidSect001
+    400104: Cntrl_Pup L Front Foot001
+    400106: Cntrl_Pup L Rear Foot001
+    400108: Cntrl_Pup Main Toung001
+    400110: Cntrl_Pup Neck Base001
+    400112: Cntrl_Pup Neck001
+    400114: Cntrl_Pup Neck002
+    400116: Cntrl_Pup Nose001
+    400118: Cntrl_Pup Pelvis001
+    400120: Cntrl_Pup R Brow Roll001
+    400122: Cntrl_Pup R Brow001
+    400124: Cntrl_Pup R Ear Base001
+    400126: Cntrl_Pup R Ear MidSect001
+    400128: Cntrl_Pup R Front Foot001
+    400130: Cntrl_Pup R Rear Foot001
+    400132: Cntrl_Pup Root001
+    400134: Cntrl_Pup Spine Bend001
+    400136: Cntrl_Pup Spine Bend002
+    400138: Cntrl_Pup Spine Bend003
+    400140: Cntrl_Pup Tail Base001
+    400142: Cntrl_Pup Tail Base001 1
+    400144: Cntrl_Pup Tail End001
+    400146: Cntrl_Pup Tail Mid Sec001
+    400148: Cntrl_Pup Toung Bend001
+    400150: Cntrl_Pup World Ankor001
+    400152: //RootNode
+    400154: IK Chain001
+    400156: IK Chain002
+    400158: IK Chain003
+    400160: IK Chain004
+    400162: IK Chain005
+    400164: IK Chain006
+    400166: IK Chain007
+    400168: IK Chain008
+    400170: IK Chain009
+    400172: IK Chain010
+    400174: IK Chain011
+    400176: NUB_Bone Pup_Jaw001
+    400178: NUB_Bone Pup_Tounge001
+    400180: NUB_Bone_Pup Head001
+    400182: NUB_Bone_Pup L Brow001
+    400184: NUB_Bone_Pup L Ear001
+    400186: NUB_Bone_Pup L Leg001
+    400188: NUB_Bone_Pup Nose001
+    400190: NUB_Bone_Pup R Brow001
+    400192: NUB_Bone_Pup R Ear001
+    400194: NUB_Bone_Pup R Leg001
+    400196: NUB_Bone_Pup Tail001
+    400198: NUM_Bone_Pup L Arm001
+    400200: NUM_Bone_Pup R Arm001
+    400202: PissedDog_001
+    400204: Point001
+    400206: Point002
+    400208: Point003
+    400210: Point004
+    400212: Point005
+    400214: Point006
+    400216: Point007
+    400218: Point008
+    400220: Point009
+    400222: Point010
+    400224: Point011
+    400226: Point012
+    400228: Point013
+    400230: Point014
+    400232: Point015
+    400234: Point016
+    400236: Point017
+    400238: Point018
+    400240: Point019
+    400242: Point020
+    400244: Point021
+    400246: Point022
+    400248: Point023
+    400250: Point024
+    400252: Point025
+    400254: Point026
+    400256: Point027
+    400258: Point028
+    400260: Point029
+    400262: Point030
+    400264: Point031
+    400266: Point032
+    400268: Point033
+    400270: Point034
+    400272: Point035
+    400274: Point036
+    400276: Point037
+    400278: Point038
+    400280: Point039
+    400282: Point040
+    400284: Point041
+    400286: Point042
+    400288: Point043
+    400290: ROOT Bone_Pup000
+    4300000: PissedDog_001
+    7400000: Pissed Pup Walk Animation
+    9500000: //RootNode
+    13700000: PissedDog_001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
