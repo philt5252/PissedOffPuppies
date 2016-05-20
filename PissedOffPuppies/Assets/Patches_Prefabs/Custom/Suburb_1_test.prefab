@@ -556,7 +556,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 448472}
   m_Layer: 0
-  m_Name: Suburb
+  m_Name: Suburb_1_test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
