@@ -1256,6 +1256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patchesPrefabs:
   - {fileID: 124976, guid: 61304d3756276a1429ecfed3870655db, type: 2}
+  - {fileID: 123472, guid: c7ec486c142764770b2725a66e79f0bb, type: 2}
   bossPatch: {fileID: 187398, guid: 052b4b1ec51456a4caf08b44464cd7dc, type: 2}
 --- !u!114 &1000
 MonoBehaviour:
