@@ -127,7 +127,8 @@ GameObject:
   - 33: {fileID: 3303356}
   - 64: {fileID: 6423088}
   - 23: {fileID: 2397774}
-  m_Layer: 0
+  - 65: {fileID: 6590974}
+  m_Layer: 9
   m_Name: Street2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1180,7 +1181,7 @@ GameObject:
   - 33: {fileID: 3340476}
   - 65: {fileID: 6531820}
   - 23: {fileID: 2396802}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SideWalk Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1494,7 +1495,7 @@ GameObject:
   - 33: {fileID: 3318498}
   - 65: {fileID: 6518530}
   - 23: {fileID: 2370722}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sidewalk Left (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2192,7 +2193,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 147, y: -109.6375, z: -10}
+  m_LocalPosition: {x: 1563, y: -2, z: -30}
   m_LocalScale: {x: 310.63995, y: 2.479577, z: 37.193657}
   m_Children:
   - {fileID: 488548}
@@ -2295,7 +2296,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 131430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1419, y: 108, z: -17.8}
+  m_LocalPosition: {x: -132.86823, y: 446.24463, z: 36.572678}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 456016}
@@ -2867,7 +2868,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165276}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1349, y: -70, z: 25}
+  m_LocalPosition: {x: 67, y: 1, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400576}
@@ -6796,6 +6797,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6590974
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102590}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0.00000047683716, y: 0.0000019073486, z: 0}
 --- !u!65 &6591134
 BoxCollider:
   m_ObjectHideFlags: 1
