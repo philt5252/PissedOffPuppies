@@ -637,7 +637,6 @@ MonoBehaviour:
   - {fileID: 160258, guid: 7e5bda94a342c6341803af934360bab7, type: 2}
   - {fileID: 119598, guid: b83864ba3eb55b64d8ede891863327e0, type: 2}
   - {fileID: 178704, guid: 4b1d013f58f34f246bb15fb72a94a975, type: 2}
-  - {fileID: 177322, guid: 496ce103139aa3140907f6367686de25, type: 2}
   powerupPrefabs:
   - {fileID: 100000, guid: 5f317cbbd24c54501a7788776c001d85, type: 2}
   currencyPrefab: {fileID: 100004, guid: 5aa14576ba85d4ea995984762c527f26, type: 2}
@@ -1256,7 +1255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patchesPrefabs:
-  - {fileID: 131430, guid: d9a85d5fe3754403aa1279ceba755d90, type: 2}
+  - {fileID: 195168, guid: 3c7649550e4b142e1a3089d42ab35502, type: 2}
   bossPatch: {fileID: 187398, guid: 052b4b1ec51456a4caf08b44464cd7dc, type: 2}
 --- !u!114 &1000
 MonoBehaviour:
@@ -1404,6 +1403,10 @@ Prefab:
     - target: {fileID: 400180, guid: 8644992118ceb4087b178f7a8b344294, type: 3}
       propertyPath: m_LocalScale.z
       value: 7.158264
+      objectReference: {fileID: 0}
+    - target: {fileID: 100180, guid: 8644992118ceb4087b178f7a8b344294, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8644992118ceb4087b178f7a8b344294, type: 3}
